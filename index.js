@@ -24,6 +24,12 @@ function isTruthy(inputValue) {
 
 // Using if/else if/else statemetns JavaScript code in a script tag that takes the sum of two numbers and prints the corresponding result
 
+// sum + ' is greater than 100'
+// sum + ' is greater than 0'
+// sum + ' is equal to 0'
+// sum + ' is a negative number'
+// sum + ' is less than -1000'
+
 function NumberLine(number1, number2) {
   let sum = number1 + number2
   if (sum > 100) {
@@ -53,9 +59,31 @@ function NumberLine(number1, number2) {
 // 0, 0 = false
 // 1000, -1000 = false
 // 6, 4 = false
-// 5, 5 = trues
+// 5, 5 = true
 
 const Greater_Than_Or_Equal_To_5 = (a, b) =>
   a >= 5 && b >= 5 ? console.log(true) : console.log(false)
 
-function pairAndCompare() {}
+// Greater_Than_Or_Equal_To_5(5, 6)
+// Greater_Than_Or_Equal_To_5(10, 11)
+// Greater_Than_Or_Equal_To_5(0, 0)
+// Greater_Than_Or_Equal_To_5(1000, -1000)
+// Greater_Than_Or_Equal_To_5(6, 4)
+// Greater_Than_Or_Equal_To_5(5, 5)
+
+// Using if/else if/else statements and strict equality operators, create javascript code that compares two sets of two values. Print true if at least one of the pairs is truthy.
+
+function pairAndCompare(param1A, param1B, param2A, param2B) {
+  if (param1A === param1B || param2A === param2B) {
+    console.log(true)
+  } else {
+    console.log(false)
+  }
+}
+
+// pairAndCompare('cat', 'cat', 6, '6') // true
+// pairAndCompare('five', 5, 'dog', 'dawg') // false
+// pairAndCompare(0, false, 'horse', 'horse') // true
+// pairAndCompare('eight', 'eight', 'ate', 'ate') // true
+// pairAndCompare(11, 'eleven', 'four', 'for') // false
+// pairAndCompare('cake', 'cake', 'pie', 'pie') // true
