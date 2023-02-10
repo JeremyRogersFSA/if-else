@@ -40,7 +40,7 @@ function NumberLine(number1, number2) {
     console.log(sum + ' is equal to 0')
   } else if (sum < 0) {
     console.log(sum + ' is a negative number')
-  } else if (sum < -1001) {
+  } else if (sum < -1000) {
     console.log(sum + ' is less than -1000')
   }
 }
