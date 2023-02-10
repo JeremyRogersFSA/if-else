@@ -46,6 +46,15 @@ function NumberLine(number1, number2) {
 // NumberLine(-1000, 0)
 // NumberLine(-5, 0)
 
-function Greater_Than_Or_Equal_To_5() {}
+// using if/else if/else statements create javascript code that prints true if both parameters are greater or equal to 5.
+
+// 5, 6 = true
+// 10, 11 = true
+// 0, 0 = false
+// 1000, -1000 = false
+// 6, 4 = false
+// 5, 5 = trues
+
+const Greater_Than_Or_Equal_To_5 = (a, b) => a >= 5 && b >= 5
 
 function pairAndCompare() {}
