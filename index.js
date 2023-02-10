@@ -55,6 +55,7 @@ function NumberLine(number1, number2) {
 // 6, 4 = false
 // 5, 5 = trues
 
-const Greater_Than_Or_Equal_To_5 = (a, b) => a >= 5 && b >= 5
+const Greater_Than_Or_Equal_To_5 = (a, b) =>
+  a >= 5 && b >= 5 ? console.log(true) : console.log(false)
 
 function pairAndCompare() {}
