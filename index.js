@@ -7,12 +7,17 @@
 // "The empty string is falsy (the only falsy string)""
 
 function isTruthy(inputValue) {
-  if (inputValue) console.log(true)
-  if (inputValue == false) console.log('The boolean value false is falsy')
-  if (inputValue == null) console.log('The null value is falsy')
-  if (inputValue == undefined) console.log('undefined is falsy')
-  if (inputValue == 0) console.log('The number 0 is falsy (the only falsy number)')
-  if (inputValue == '') console.log('The empty string is falsy (the only falsy string)')
+  if (inputValue) {
+    return console.log(true);
+  }
+  if (inputValue === false)
+    console.log(`The ${typeof inputValue} value ${inputValue} is falsy`);
+  if (inputValue === null) console.log(`The null value is falsy`);
+  if (inputValue === undefined) console.log(`${inputValue} is falsy`);
+  if (inputValue === 0)
+    console.log(`The number 0 is falsy (the only falsy number)`);
+  if (inputValue === "")
+    console.log("The empty string is falsy (the only falsy string)");
 }
 
 // isTruthy('I am a string')
